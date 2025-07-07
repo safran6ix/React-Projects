@@ -1,5 +1,8 @@
 .landing-container {
-  background-color: #000000;
+  background: linear-gradient(-45deg, #1a1a1a, #141414, #1e1e1e, #0e0e0e);
+  background-size: 400% 400%;
+  animation: backgroundLoop 20s ease infinite;
+
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -8,6 +11,22 @@
   padding: 1rem;
   font-family: sans-serif;
 }
+
+@keyframes backgroundLoop {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Keep the rest of your styles the same */
 
 .landing-content {
   text-align: center;
@@ -48,7 +67,6 @@
   color: black;
 }
 
-/* Animations */
 @keyframes fadeInDown {
   from {
     transform: translateY(-20px);
