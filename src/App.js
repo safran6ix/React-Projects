@@ -11,9 +11,9 @@ function App() {
           </div>
       </header>
 
-      <div className='container'>
+      {/* <div className='container'>
         <p>Lore</p>
-      </div>
+      </div> */}
 
     </div>
   );
