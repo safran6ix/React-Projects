@@ -13,6 +13,18 @@ function App() {
           Get Early Access
         </a>
       </div>
+
+      <div className='body-part'>
+        <h2 className='title'>Portfolio.</h2>
+        <p className='title-para'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, in.
+        </p>
+      </div>
+    
+
+
+
+
     </div>
   );
 }
