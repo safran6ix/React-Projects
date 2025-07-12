@@ -61,7 +61,7 @@
 
 .cta-button:hover {
   background-color: white;
-  color: rgb(176, 92, 255);;
+  color: rgb(0, 107, 125);
 }
 
 @keyframes fadeInDown {
@@ -107,5 +107,5 @@
   font-weight: 100;
   top: 140px;
   left: 50px;
-  color: rgb(176, 92, 255);
+  color: rgb(0, 107, 125);
 }

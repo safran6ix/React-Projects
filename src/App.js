@@ -19,6 +19,13 @@ function App() {
         <p className='title-para'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, in.
         </p>
+
+        <div className='body-cont'>
+          <div className='resume'></div>
+          <div className='project'></div>
+          <div className='contact'></div>
+        </div>
+
       </div>
     
 
