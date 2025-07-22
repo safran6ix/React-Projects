@@ -161,3 +161,8 @@
     transform: rotate(360deg);
   }
 }
+
+.card h1{
+  color: rgb(7, 89, 100);
+  padding-top: 45%;
+}
