@@ -1,6 +1,7 @@
 .landing-container {
   /* background: linear-gradient(-45deg, #1a1a1a, #141414, #1e1e1e, #0e0e0e); */
-  background-color: #000;
+  /* background-color: #000; */
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
   background-size: 400% 400%;
   animation: backgroundLoop 20s ease infinite;
   color: #fff;
@@ -92,7 +93,7 @@
   position: absolute;
   width: 100%;
   height: 800px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   top: 800px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -104,6 +105,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 3rem;
   font-weight: 800;
+  color: black;
 }
 .title-para{
   position: absolute;
@@ -120,28 +122,41 @@
   align-items: center;
   width: 80%;
   height: 300px;
-  /* background-color: rgba(0, 255, 255, 0.195); */
+  background-color: rgba(255, 196, 0, 0.86);
+  margin-top: 50px;
 }
-.resume{
-  width: 250px;
-  height: 250px;
-  background-color: #ffffff;
-  /* -webkit-backdrop-filter: blur(100%);
-  backdrop-filter: blur(100px); */
-  border-radius: 30px;
-  border: 2px solid rgb(0, 107, 125);
+.card{
+  width: 270px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.321);
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(114, 114, 114, 0.3);
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
-.project{
-  width: 250px;
-  height: 250px;
-  background-color: #fff;
-  border-radius: 30px;
-  border: 2px solid rgb(0, 107, 125);
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #ff6ec4, #7873f5, #4ade80,
+      #ff6ec4);
+  animation: rotateGlow 8s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
 }
-.contact{
-  width: 250px;
-  height: 250px;
-  background-color: #fff;
-  border-radius: 30px;
-  border: 2px solid rgb(0, 107, 125);
+@keyframes rotateGlow {
+  to {
+    transform: rotate(360deg);
+  }
 }

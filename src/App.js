@@ -21,9 +21,9 @@ function App() {
         </p>
 
         <div className='body-cont'>
-          <div className='resume'></div>
-          <div className='project'></div>
-          <div className='contact'></div>
+          <div className='card'></div>
+          <div className='card'></div>
+          <div className='card'></div>
         </div>
 
       </div>
