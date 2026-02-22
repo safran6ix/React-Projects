@@ -7,10 +7,10 @@ import Contact from '../components/Contact';
 const Home = () => {
     return (
         <>
-            <Hero/>
-            <Services/>
-            <About/>
-            <Contact/>
+            <Hero />
+            <Services />
+            <About />
+            <Contact />
         </>
     );
 };
