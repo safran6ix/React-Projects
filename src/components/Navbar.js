@@ -13,7 +13,40 @@ const Navbar = () => {
     ];
 
     return (
+        <nav className="navbar">
+            <div className="container navbar" id="navbar-cont">
+               <Link to="/" className="navbar-logo">
+                    Portfolio
+               </Link>
 
+               <div className="navbar-menu">
+                   {navigation.map((item) => (
+                      <Link key={item.name} to={item.href} className="navbar-link">
+                        {item.name}
+                      </Link>
+                   ))}
+               </div>
+
+               <button className="moblie-menu-btn" onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <XMarkIcon /> : <Bars3Icon/>}
+               </button>
+
+               {isOpen && (
+                    <div className="mobile-menu">
+                        {navigation.map((item) => (
+                            <Link
+                                key={item.name}
+                                to={item.href}
+                                className="mobile-link"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </div>
+               )}
+            </div>
+        </nav>
     );
 
 };
